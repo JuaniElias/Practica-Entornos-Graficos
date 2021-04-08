@@ -1,0 +1,490 @@
+1) Es un lenguaje de marcado para la elaboración de páginas web.
+Es un estándar que sirve de referencia del software que conecta con la elaboración de
+páginas web en sus diferentes versiones.
+Define una estructura básica y un código (denominado código HTML) para la definición de
+contenido de una página web, como texto, imágenes, videos, juegos, entre otros.
+Fue creada en la decada de los 90' y fue pasando por diferentes versiones como:
+- HTML 3.0
+- HTML 3.2
+- HTML 4.01 o XHTML 1.0
+- XHTML Modularization
+- XHTML 2.0
+- DOM Level 1
+- DOM Level 2 Core
+- DOM Level 2 HTML
+- DOM Level 3
+- HTML 5.0
+
+2) 2.El Consorcio WWW, en inglés: World Wide Web Consortium (W3C), es un consorcio internacional
+que genera recomendaciones y estándares que aseguran el crecimiento de la 
+World Wide Web a largo plazo.
+La Web se basa en tres mecanismos para hacer que estos recursos estén listos y a disposición de la
+mayor audiencia posible:
+1. Un esquema uniforme de nombres para localizar recursos en la Web (p.ej., URIs).
+2. Protocolos, para acceder a recursos con nombre en la Web (p.ej., HTTP).
+3. Hipertexto, para navegar fácilmente entre recursos (p.ej., HTML).
+
+
+3) Se consideran desaprobados al encontrarse alternativas mas potententes, completos y mejorados y
+el W3C los declara como tal.
+Se los declaran obsoletos cuando ya no existe soporte para el mismo y no estan mas definidos en
+la documentacion.
+
+
+4) La declaración del tipo de documento (DTD Document Type Declaration), esta sección se ubica en la
+primera línea del archivo HTML, es decir antes de la marca html.
+Es importante agregar el DOCTYPE, de esta forma el navegador puede saber que estamos utilizando la
+especificación del HTML.
+
+Existen tres DTDs contemplados en la especificación de HTML 4.01: strict (estricto),
+transitional (transicional), y frameset (de documentos con marcos).
+
+5) Los Metadatos son elementos HTML que muestran información sobre la propia página web que los contiene.
+Son usados por los buscadores para definir la información principal de nuestra web.
+
+Cómo se especifican:
+<head> seccion del encabezado
+<title> título del documento
+<base> URI base para resolver URIs relativos
+<link> Informacion relacional para el documento
+<meta> variable para el documento
+<style> atributos presentacionales
+
+Ejercicio 2)
+
+2.a)
+<!-- Código controlado el día 12/08/2009 --> 
+Es un comentario, puede ser escrito en cualquier sección. <!-- --> esta es la etiqueta.
+
+2.b)
+<div id="bloque1">Contenido del bloque1</div>
+HTML div puede estar en APPLET, BLOCKQUOTE, BODY, BUTTON, CENTER, DD,
+DEL, DIV, FIELDSET, FORM, IFRAME, INS, LI, MAP, NOFRAMES, NOSCRIPT, OBJECT, TD, TH.
+
+la etiqueta es <div></div>
+
+es utilizado para agrupar elementos e implementar un estilo usando id o un atributo class='clase'
+
+2.c)
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32"
+longdesc="detalles.htm" />
+
+se puede usar en cualquier sección.
+atributos:
+src='' ruta a la imagen
+alt='' texto alternativo cuando la imagen no se puede mostrar
+id='' id de la imagen
+name='' muestra informacion adicional cuando se pasa el mouse por arriba
+width='' ancho de la imagen
+height='' alto de la imagen
+longdesc='' url a una descripcion detallada de la imagen
+
+sirve para colocar una imagen
+<img /> tag
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+El elemento provee metadatos a nivel de documento organizados en pares nombre-valor.
+El "nombre" en este par es provisto por el atributo name, mientras que el "valor" es
+provisto por el atributo content en cada caso.
+http-equiv provee un cabezal http para la informacion o valor para el atributo content
+
+name='keywords' define conjunto de identificadores separados por comas, cada uno de los cuales
+es una palabra clave que describe de alguna manera los contenidos del documento.
+lang='es' define el lenguaje español
+content='' especifica el valor asociado con el atributo name o el http-equiv
+
+provee metadatos que no pueden ser expresados con otros elementos del encabezado
+<meta /> tag
+
+este tag debe ir siempre <head>
+
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+rel="help">Resumen HTML </a>
+
+la etiqueta <a> </a> es para hypervinculos
+
+type="" El tipo de contenido que se espera que tenga el recurso enlazado.
+href="" es la ruta a donde redirecciona el linkbutton
+hreflang="es"   Una etiqueta de lenguaje que identifica al lenguaje que se espera que
+                utilice el documento enlazado.
+charset="utf-8" La codificación de caracteres utilizada por el recurso enlazado. OBSOLETO EN HTML5
+rel="" indican el significado que el recurso enlazado tiene para el documento actual
+
+puede ser encontrado en cualquier seccion
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+    <caption align="top"> Título </caption>
+    <tr>
+        <th scope="col">&nbsp;</th>
+        <th scope="col">A</th>
+        <th scope="col">B</th>
+        <th scope="col">C</th>
+    </tr>
+    <tr>
+        <th scope="row">1º</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th scope="row">2º</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+<table> </table> tag para crear una tabla, atributo global
+width="" ancho de la tabla
+summary="" resumen del contenido de la tabla
+
+<caption></caption> titulo para la tabla, va junto con el tag para tabla
+aling="top" alinear el titulo arriba. OBSOLETO EN HTML5
+
+<tr> </tr> tag para definir filas, va junto con el tag de tabla
+
+<th></th> tag para definir columnas, va junto con el tag de tabla
+scope="col" grupo de celdas para las cuales esta celda brinda información de encabezado. 
+            col indica que es para todas las celdas de esta columna
+
+<td></td> define una unica celda
+
+3.a)
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+<a href="#">Click aquí para ir a Google</a>
+<a href="#arriba">Click aquí para volver arriba</a>
+<a name="arriba" id="arriba"></a>
+
+Entre el primer y segundo tag, la diferencia es el target="_blank" indicando que el link se abrirá
+en una pestaña nueva mientras que en el primero lo abre en la misma pestaña.
+
+El tercer tag no tiene el tag de cierre </a> y el link está mal escrito
+
+en el cuarto te envia al comienzo de la página, lo malo es que el nombre del link es "Click para 
+ir a Google" lo cual no tiene sentido
+
+en el 5to tag es un hiperlink para ir a la sección "arriba"
+
+el sexto no tiene el hiperlink, no tiene el href="" que es donde se coloca el link a donde debe ser
+enviado.
+
+3.b)
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="ima
+gen1" />Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a
+href="http://www.google.com.ar">Click aquí</a></p>
+
+el primer tag es una imagen y luego un hiperlink que te lleva a google.com
+
+el segundo tag es una imagen que si le hacemos click nos lleva a google.com, luego el texto "click aqui"
+está fuera del tag <a></a> por lo que es solo texto no un hiperlink.
+
+el tercer tag está dentro del mismo tag <a></a> la imagen y el texto, por lo que ambos nos llevan a google.com
+
+el último tag la imagen y el texto son dos hiperlinks diferentes pero que ambos nos llevan a google.com
+
+3.c)
+<ul>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ul>
+
+<ol>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ol>
+
+<ol>
+<li>xxx</li>
+</ol>
+<ol>
+<li value="2">yyy</li>
+</ol>
+<ol>
+<li
+value="3">zzz</li>
+</ol>
+
+<blockquote>
+<p>1. xxx<br />
+2. yyy<br />
+3. zzz</p>
+</blockquote>
+
+en el primer bloque es una lista sin orden y el segundo es una lista ordenada.
+
+en el tercer bloque son 3 tags <ol></ol>, o sea que son 3 listas diferentes pero que
+se hardcodea el valor de cada item para que parezca que sea una sola lista. (mala practica)
+
+el tag <blockquote></blockquote> se usa para citar texto y se ve visualmente con una tabulación,
+por lo que es un engaño visual de que fuera una lista y solamente es un parrafo <p></p>
+
+3.d)
+<table border="1" width="300">
+<tr>
+<th>Columna 1</th>
+<th>Columna 2</th>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+<table border="1" width="300">
+<tr>
+<td><div align="center"><strong>Colum
+na1</strong></div></td>
+<td><div align="center"><strong>Columna
+2</strong></div></td>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+la etiqueda <th></th> es tableHeader y se usa para poner el titulo de una columna o tabla y aplica
+por default negrita y alineado al centro.
+y <td></td> se una para una celda.
+entonces podemos decir que en la segunda table se hace manualmente la configuración de las dos primeras
+celdas
+
+3.e
+
+<table width="200">
+<caption>
+Título
+</caption>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">
+&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+en la primer tabla se usa <caption></caption> que es para colocar títulos de una tabla,
+viene centrado por default.
+en la segunda tabla edita la primer celda para que ocupe 3 columnas, colspan=3, es decir 
+que se creó el titulo de manera manual.
+
+3.f
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"
+bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+la primer tabla define que en la segunda fila haya una celda que ocupe 2 filas y luego dos celdas más,
+por consiguiente la segunda fila tiene solo 2 columnas
+
+La segunda tabla hace que en la primer fila haya una celda que ocupe dos columnas y otra celda individual
+la segunda fila tiene 3 celdas individuales.
+
+3.g)
+<table width="200" border="1">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+
+<table width="200" border="1" cellpadding="0"
+cellspacing="0">
+<tr>
+<td colspan="2"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+
+La primer tabla tiene cellspacing y cellpadding en 1 por default. es una tabla de 3 columnas
+y 3 filas, donde la primer fila tiene una celda de 2x2 y una celda simple
+
+la segunda tabla es de 2x3 donde la segunta fila tiene una celda que ocupa dos filas y el cellpadding
+y cellspacing es de o pixeles.
+
+3.h)
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+</fieldset>
+<input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+
+<form id="form2" name="form2" action="" method="get" target="_blank">
+LOGIN<br />
+<label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+<label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+<input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="p
+ost" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu3" name="usu3" /><br />
+Clave: <input type="password" id="clave3" name="clave3" />
+</fieldset>
+<input type="reset" id="boton3" name="boton3" value=
+"Enviar" />
+</form>
+
+el primero y el tercero tienen el tag <fieldset></fieldset> que encierra el contenido encerrado por
+los tags y poseen un título dado por el tag <legend></legend>
+
+Los botones del primer y segundo form son del tipo submit y el tercero es de reset.
+
+El primero tiene texto por default en ambos input, uno es tipo text y el otro es tipo password. En
+el <form></form> tiene un acction="" definido para realizar una vez se haya hecho click en el botón.
+el method="post" manda como una transaccion http los valores de los input, además tiene un target="_blank"
+para abrir en otra pestaña.
+
+el segundo form no tiene accion definida pero si method="get", que hace que se mande el valor de los input
+como variables url, tambien tiene el mismo target que el form1.
+No tiene fieldset y tampoco tiene valores por defecto en los input, ambos son tipo text.
+
+El tercer form tiene accion definida, la cual es enviar un mail a la direccion indicada y método de
+encriptación, tambien tiene el target="_blank".
+Los inputs, uno es del tipo text y el otro password.
+
+3.i)
+<label>Botón 1
+<button type="button" name="boton1" id="boton1">
+<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+<b>CLICK AQUÍ</b></button></label>
+
+<label>Botón 2
+<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+</label>
+
+el primer boton tiene como valor una imagen y un texto dentro del tag <b></b> para que esté en negrita.
+
+El segundo botón directamente setea el valor del boton con un value="CLIC AQUÍ"
+
+3.j)
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+
+en el primero los radiobuttons tienen el mismo nombre pero diferentes id´s por lo que no puedo
+marcar ambos botones. 
+
+En el segundo puedo marcar ambas opciones ya que tienen diferente nombre.
+
+Una vez marcada una opción en ambos no puede destildarse.
+
+3.k)
+<select name="lista">
+<optgroup label="Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label="Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+
+<select name="lista[]" multiple="multiple">
+<optgroup label=" Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label=" Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+
+en el primer caso se crea una dropdownlist ya que se usa el tag <select></select>, y solo se puede
+elegir un valor.
+
+en el segundo se agrega el atributo multiple="multiple" que te permite elegir varias opciones manteiendo
+el boton ctrl del teclado.

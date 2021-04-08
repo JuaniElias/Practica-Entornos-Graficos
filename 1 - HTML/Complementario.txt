@@ -1,0 +1,51 @@
+Ejercitación 1
+a) Ventajas de HTML5
+- Es gratuito
+- Permite escribir código de manera ordenada
+- Es compatible en varios navegadores y navegadores móviles
+- Tiene almacenamiento local, lo que le brinda mucha ventaja contra las cookies
+- Diseño adaptativo
+
+b) Una de las principales razones para utilizar HTML5 es que se puede añadir aidio y video sin
+necesidad de usar ningún tipo de reproductor multimedia, ayudando a disminuir el tamaño del archivo
+final.
+También pueden subirse videos de páginas de terceros. La goelocalización es otro punto importante 
+para la personalización de las páginas según la residencia del usuario.
+Permite crear animaciones 2D con la utilización de canvas se pueden añadir eventos de teclado, mouse
+y cualquier otro periférico.
+
+Ejercitación 2
+a) Los formatos audio que soporta van ligado al navegador, asi es que, Crhome y Opera soportan
+mp3, ogg y wav; Safari soporta solo mp3 y wav y Firefox soprta ogg y wav.
+
+b)
+<center>
+    <audio src="https://html5tutorial.info/media/vincent.mp3" controls></audio>
+</center>
+
+Ejercitación 3
+a) El formato de video que puede soportar depende del navegador, Chrome  y Firefox soportan
+ogg/theodora y VP8/WebM, H.264 y mp4; Opera solo soporta Ogg/theodora y VP8/WebM.
+
+b)
+<video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+
+Ejercitación 4
+<form action="#">
+    <label for="4a">Formulario con un campo requerido</label>
+    <input type="text" name="4a" id="4a" required>
+    <br>
+    <label for="4b">Formulario de tipo email</label>
+    <input type="email" required name="4b" id="4b">
+    <br>
+    <label for="4c">Formulario de tipo fecha</label>
+    <input type="date" name="4c" id="4c">
+    <br>
+    <label for="4d">Formulario de tipo color</label>
+    <input type="color" name="4d" id="4d">
+    <br>
+    <label for="4e">Formulario de tipo number</label>
+    <input type="number" max="100" min="1" id="4e" name="4e">
+    <br>
+    <input type="submit" value="Validar">
+</form>
