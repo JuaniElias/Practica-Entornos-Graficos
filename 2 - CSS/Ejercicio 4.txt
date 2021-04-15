@@ -1,0 +1,36 @@
+<style>
+* {color:green; }           --> todo el texto es de color verde
+a:link {color:gray }        --> link no visitado es gris
+a:visited{color:blue }      --> link visitado es azul
+a:hover {color:fuchsia }    --> cursor sobre el link se vuelve color fuchsia
+a:active {color:red }       --> al hacer click sobre el link se vuelve color rojo
+p {font-family: arial,helvetica;font-size: 10px;color:black; }      --> los parrafos tienen diferentes estilos
+.contenido{font-size: 14px; font-weight: bold; }        --> estilo propio para la clase "contenido"
+</style>
+
+<body>
+<p class="contenido" style="font-weight: normal;">      --> el texto es de color negro porque tiene el tag p
+Este es un texto ...............</p>
+<table>
+<tr>
+<td>Y esta es una tabla.......</td>         --> este texto es verde poque el tag td, table o tr no tiene definido un estilo propio
+</tr>
+<tr>
+<td><a href="http://www.google.com.ar">con un       
+enlace</a></td>                                     --> tiene un enlace
+</tr>
+</table>
+</body>
+
+<body class="contenido">                --> define a todo lo que está encerrado en el tag body con el estilo de la clase contenido
+    <p> Este es un texto................</p>
+    <table>
+    <tr>
+    <td>Y esta es una tabla.......</td>
+    </tr>
+    <tr>
+    <td><a href="http://www.google.com.ar">con
+    un enlace</a></td>
+    </tr>
+    </table>
+</body>

@@ -1,0 +1,9 @@
+p.quitar {              --> para todo tag p de clase "quitar"
+color: red;             --> color de fuente roja
+}
+*.desarrollo {          --> todos los tags con clase "desarrollo"
+font-size: 8px;         --> tamaño de fuente 
+}
+.importante {           --> todos los tags con clase "importante"
+font-size: 20px;        --> tamaño de fuente
+}
