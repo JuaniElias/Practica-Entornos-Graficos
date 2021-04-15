@@ -1,0 +1,14 @@
+p#normal {                          --> se aplica el estilo en los parrafos con id="normal" 
+font-family: arial,helvetica;       --> cambia la fuente
+font-size: 11px;                    --> tamaño de la fuente
+font-weight: bold;                  --> negrita
+}
+*#destacado {                       --> para todos los tags con id="destacado"
+border-style: solid;                --> bordes solidos
+border-color: blue;                 --> color del borde azul
+border-width: 2px;                  --> ancho del borde
+}
+#distinto {                         --> estilo para tags con id="distinto"
+background-color: #9EC7EB;          --> color de fondo tono claro de azul cian
+color: red;                         --> fuente color rojo rojo, rojito profe
+}

@@ -1,0 +1,85 @@
+1. ¿ Qué es CSS y para qué se usa?
+CSS son las siglas de Cascade Style Sheet que traducido significa hojas de estilo en
+cascada. Las hojas de estilo es una tecnología que nos permite controlar la apariencia de una
+página web, podemos especificar estilos como el tamaño, fuentes, color, espaciado entre
+textos y recuadros así como el lugar donde disponer texto e imágenes en la página.
+CSS se utiliza para dar estilo a documentos HTML y XML, separando el contenido de la
+presentación.
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+La regla tiene dos partes: un selector y la declaración. A su vez la declaración está compuesta
+por una propiedad y el valor que se le asigne.
+
+Ejemplo:
+h1 {color: red;}
+h1 es el selector
+{color: red;}
+es la declaración
+
+El selector funciona como enlace entre el documento y el estilo, especificando los elementos que se
+van a ver afectados por esa declaración.
+La declaración es la parte de la regla que establece cuál será el efecto.
+En el ejemplo anterior, el selector h1 indica que todos los elementos h1 se verán afectados por
+la declaración donde se establece que la propiedad color va a tener el valor red (rojo)
+para todos los elementos h1 del documento o documentos que estén vinculados a esa hoja de estilos.
+
+3. ¿Cuáles son las tres formas de dar estilo a un documento?
+Las formas de insertar una hoja de estilo son:
+•    CSS externo: Se incluye una referencia al archivo .css, dentro del elemento <link> en HTML
+•    CSS interno: definiendo una etiqueta <style> de una página HTML
+•    CSS en línea: los estilos en línea se definen dentro del atributo style del cada elemento.
+
+4. ¿Cuáles son los distintos tipos de selectores más utilizados?
+Ejemplifique cada uno.
+
+- Selector Universal
+* {
+  margin: 0;
+  padding: 0;
+  } 
+
+- Selector de tipo o etiqueta
+h1  {
+  color: red;
+    }   
+
+- Selector descendente
+p span { color: red; }
+
+- Selector de clase
+.clase { color: red; }
+
+- Selectores de ID
+#destacado { color: red; }
+
+5. ¿Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+Las llamadas “pseudo clases” son determinadas palabras clave que se añaden a los selectores para
+especificar diferentes estados. Si los elementos a los que se aplican dichos selectores cumplen con
+estas condiciones o estados, se aplican los estilos.
+
+Es posible combinar pseudo-clases juntas. 
+Por ejemplo: 
+a: link: hover {color: red;}
+a: visited: hover {color: pink;}
+
+Todas las pseudo-clases, sin excepción, son una palabra procedida por dos puntos (:).
+
+Pseudo clases :hover, :link, :visited, :active
+
+Sin duda estas son las pseudo clases más conocidas, y aunque :hover se puede aplicar a múltiples
+elementos, todas ellas se suelen utilizar para aplicar diferentes estilos a los enlaces para los
+estados “sobre”, “sin visitar”, “visitado” y “activo” (al hacer click). Aplicamos diferentes
+estilos a estos estados en el siguiente ejemplo, al cual hemos aplicado unos “href” en “HIJO2” e
+“HIJO5” para poder llegar a visualizar todos los ejemplos correctamente y ver cómo influyen unos
+estados en otros.
+
+
+6. ¿Qué es la herencia?
+La herencia es el mecanismo mediante el cual determinadas propiedades de un elemento padre se
+transmiten a sus hijos. Está relacionada con cómo los elementos del etiquetado de HTML heredan
+propiedades de sus elementos padres (los que los contienen) y los transmiten a sus hijos.
+
+7. ¿En qué consiste el proceso denominado cascada?
+El formato final de cualquier elemento depende de la combinación de todas las propiedades
+que afectan al elemento. La denominación de hojas de estilo en cascada hace referencia precisamente
+a este hecho.
