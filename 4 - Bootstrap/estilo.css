@@ -1,0 +1,31 @@
+.container-fluid{
+    background-color: aquamarine;
+
+}
+#venus {
+    background-color: #9d8d98;
+    border:white 3px solid;
+}
+#polo {
+    background-color: #7c9ecb;
+    border:white 3px solid;
+    align-items: center;
+}
+#albescente {
+    background-color: #f4d9d0;
+    text-align: center;
+    border:white 3px solid;
+}
+#verde{
+    background-color: #68cc83;
+    border:white 3px solid;
+}
+#lavanda{
+    background-color: #a67da7;
+    border:white 3px solid;
+}
+
+form {
+    padding: 10px;
+    
+}
