@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Formulario Alta Usuarios</title>
+</head>
+
+<body>
+    <FORM action="Alta.php" method="POST" name="Alta">
+        <TABLE width="225">
+            <TR>
+                <TD> Ciudad:</TD>
+                <TD> <input type="TEXT" name="ciudad" size="20" maxlength="45">
+            </TR>
+            <TR>
+                <TD> País:</TD>
+                <TD> <input type="text" name="pais" size="20" maxlength="45"> </TD>
+            </TR>
+            <TR>
+                <TD> Habitantes: </TD>
+                <TD> <input type="number" name="habitantes" size="20" maxlength="20"></TD>
+            </TR>
+            <TR>
+                <TD> Superficie: </TD>
+                <TD> <INPUT TYPE="number" name="sup" size="20" maxlength="40"> </TD>
+            </TR>
+            <tr>
+                <td colspan="5">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" name="tm">
+                        <label class="form-check-label" for="flexCheckDefault"> Tiene metro.</label>
+                      </div>
+                </td>
+            </tr>
+            <TR>
+                <TD colspan="2" align="center"> <INPUT TYPE="SUBMIT" name="Submit" value="Agregar">
+                    <p><a href="Menu.html">Volver al menu; del ABM</a></p>
+                </TD>
+            </TR>
+        </TABLE>
+    </FORM>
+</body>
+
+</html>
