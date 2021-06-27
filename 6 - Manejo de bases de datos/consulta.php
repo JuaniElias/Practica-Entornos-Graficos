@@ -29,7 +29,7 @@
                 <td><?php echo ($fila['pais']); ?></td>
                 <td><?php echo ($fila['habitantes']); ?></td>
                 <td><?php echo ($fila['superficie']); ?></td>
-                <td><?php echo ($fila['tieneMetro']); ?></td>
+                <td><?php if ($fila['tieneMetro'] != 0) {echo ("Si");} else {echo ("No");}; ?></td>
             </tr>
             <tr>
                 <td colspan="5">
@@ -44,7 +44,7 @@
             </tr>
     </table>
     <p>&nbsp;</p>
-    <p align="center"><a href="Menu.html">Volver al menu; del ABM</a></p>
+    <p align="center"><a href="Menu.html">Volver al menu del ABM</a></p>
 </body>
 
 </html>

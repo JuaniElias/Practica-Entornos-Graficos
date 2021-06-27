@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect("localhost", "root") or die ("Problemas de conexión a la base de
+$link = mysqli_connect("localhost", "root", "tu contraseña") or die ("Problemas de conexión a la base de
 datos");
 mysqli_select_db($link, "capitales");
 ?>

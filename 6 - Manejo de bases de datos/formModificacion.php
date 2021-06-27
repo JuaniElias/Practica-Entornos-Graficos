@@ -16,6 +16,11 @@
     ?>
         <FORM action="modificacion.php" method="POST" name="FormModificacion">
             <table width="356">
+		<tr>
+                    <td width="103"> ID: </td>
+                    <td width="243"> <input type="text" name="id" value="<?php echo ($fila['id']); ?>">
+                    </td>
+                </tr>
                 <tr>
                     <td width="103"> Ciudad: </td>
                     <td width="243"> <input type="text" name="ciudad" value="<?php echo ($fila['ciudad']); ?>">
@@ -38,7 +43,7 @@
                 </tr>
                 <td colspan="5">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="1" name="tm">
+                        <input class="form-check-input" type="checkbox" value="1" name="tm" id="tm">
                         <label class="form-check-label" for="flexCheckDefault"> Tiene metro.</label>
                       </div>
                 </td>
